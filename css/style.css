@@ -2578,10 +2578,222 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   color: #2F2E2E;
 }
 
+.vacancies {
+  position: relative;
+}
+
+.vacancies__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px 0;
+}
+
+.vacancies__column:first-child {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.vacancies__column:last-child {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 58%;
+          flex: 0 1 58%;
+  background: #F5C519;
+}
+
+.vacancies__iner {
+  max-width: 480px;
+  margin-left: auto;
+}
+
+.vacancies__content {
+  max-width: 616px;
+  padding: 60px 10px 30px 40px;
+}
+
+.vacancies__title::before {
+  left: -81%;
+}
+
+.vacancies__subtitle {
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #2E2D2D;
+  margin: 0 0 30px 0;
+}
+
+.vacancies__text {
+  font-size: 20px;
+  line-height: 135%;
+  color: #2E2D2D;
+}
+
+.vacancies-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -10px 20px -10px;
+}
+
+.vacancies-row__column {
+  position: relative;
+  overflow: hidden;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 calc( 33.3333% - 20px);
+          flex: 0 1 calc( 33.3333% - 20px);
+  min-height: 585px;
+  margin: 10px;
+  background: #2E2D2D;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+._no-webp .vacancies-row__column::before {
+  background-image: url("../img/page-services/right-arrow.png"); }
+
+.vacancies-row__column::before {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  bottom: 10px;
+  right: 10px;
+  width: 25px;
+  height: 45px;
+  background-size: cover;
+  background-position: center;
+}
+
+.vacancies-row__column:hover .vacancies-row__hover {
+  left: 0;
+}
+
+.vacancies-row__items {
+  padding: 40px;
+}
+
+.vacancies-row__subtitle {
+  color: #fff;
+}
+
+.vacancies-row__text {
+  color: #fff;
+  margin: 0 0 20px 0;
+}
+
+.vacancies-row__text_black {
+  color: #000;
+}
+
+.vacancies-row__hover {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #F5C519;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 40px;
+}
+
+.abaut-page {
+  position: relative;
+  z-index: 1;
+}
+
+._no-webp .abaut-page::before {
+  background-image: url("../img/abaut/bg.png"); }
+
+.abaut-page::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.abaut-page__body {
+  position: relative;
+  z-index: 2;
+  width: 50%;
+  background: #262626;
+  margin: 0 0 30px 0;
+}
+
+._no-webp .abaut-page__body::before {
+  background-image: url("../img/abaut/r.png"); }
+
+.abaut-page__body::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: -222px;
+  width: 280px;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.abaut-page__container {
+  max-width: 600px;
+  margin-left: auto;
+  padding: 35px 0 80px;
+}
+
 .page {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+}
+
+@media (min-width: 776px) {
+  ._no-webp .vacancies::before {
+    background-image: url("../img/vacancies-bg.png"); }
+  .vacancies::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 130px;
+    left: 0;
+    width: 55%;
+    height: 100%;
+    background-size: cover;
+  }
 }
 
 @media (min-width: 786px) {
@@ -2691,6 +2903,16 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     -webkit-box-flex: 0;
         -ms-flex: 0 33.3333%;
             flex: 0 33.3333%;
+  }
+
+  .vacancies-row__column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 calc( 50% - 20px);
+            flex: 0 1 calc( 50% - 20px);
+  }
+
+  .abaut-page__body {
+    width: 60%;
   }
 }
 
@@ -2835,6 +3057,32 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     padding: 0 100px;
     width: 100%;
   }
+
+  .vacancies__top {
+    display: block;
+  }
+
+  .vacancies__iner {
+    max-width: none;
+    text-align: center;
+  }
+
+  .vacancies__title::before {
+    display: none;
+  }
+
+  .abaut-page__body {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .abaut-page__body::before {
+    display: none;
+  }
+
+  .abaut-page__container {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 786px) {
@@ -2941,6 +3189,24 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
         -ms-flex: 0 1 50%;
             flex: 0 1 50%;
   }
+
+  .vacancies-row__column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1  100%;
+            flex: 0 1  100%;
+  }
+
+  .abaut-page__title {
+    text-align: center;
+  }
+
+  .abaut-page__title::before {
+    display: none;
+  }
+
+  .abaut-page__text {
+    margin: 0 0 20px 0;
+  }
 }
 
 @media (max-width: 479.98px) {
@@ -2985,6 +3251,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;
   }
+
+  .vacancies-row__hover {
+    padding: 10px;
+  }
 }
 
 @media (min-width: 786px) and (max-width: 1250px) {
@@ -3021,3 +3291,14 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 ._webp .activity__box::after { background-image: url(../img/page-services/right-arrow.webp); }
 
 ._webp .activity__hover { background-image: url(../img/page-services/bg-hover.webp); }
+
+._webp .vacancies-row__column::before { background-image: url(../img/page-services/right-arrow.webp); }
+
+._webp .abaut-page::before { background-image: url(../img/abaut/bg.webp); }
+
+._webp .abaut-page__body::before { background-image: url(../img/abaut/r.webp); }
+
+@media (min-width: 776px) {
+
+  ._webp .vacancies::before { background-image: url(../img/vacancies-bg.webp); }
+}
